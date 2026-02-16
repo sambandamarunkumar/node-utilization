@@ -28,37 +28,21 @@ Distributed storage systems use partitioning to spread data across nodes for sca
 - **Memory Efficiency:**
    Addressed uneven memory consumption by balancing caching and buffering across nodes.
 
-
-
-### Key Contributions
-- **Monitoring-Driven Scheduling:**
-Introduced a metric-based scheduler that continuously tracks queue length, contention, and execution delays to guide intelligent transaction placement.
-
-- **Dynamic Workload Redistribution:**
-Developed an adaptive strategy that shifts transactions from overloaded nodes to underutilized ones to prevent hotspots and maintain balance.
-
-- **Scalability Optimization:**
-Designed a systematic methodology to reduce coordination overhead, lock contention, and commit latency, sustaining throughput as cluster size grows.
-
-- **Implementation & Validation:**
-Implemented and evaluated the approach through simulations across multiple cluster sizes, demonstrating consistently higher throughput than static allocation.
-
 ### Relevance & Impact
+- **Improved Node Utilization:**
+   Reduced idle capacity and ensured all nodes contribute effectively to workload processing.
 
-- **Better Resource Utilization:**
-Reduced node overload and improved overall system efficiency through balanced execution.
+- **Scalable Performance:**
+   Achieved stable throughput even as cluster size and workload intensity increase.
 
-- **Faster Transactions:**
-Lowered commit delays and contention, enabling quicker transaction completion.
+- **Cost Efficiency:**
+   Lowered operational expenses by avoiding wasted hardware and energy from underutilized nodes.
 
-- **Improved Scalability:**
-Maintained stable throughput as clusters expand and workloads intensify.
+- **Adaptability:**
+   Responded to dynamic and unpredictable access patterns without manual intervention.
 
-- **Stable Under Variability:**
-Adapted smoothly to changing transaction patterns without manual intervention.
-
-- **Practical & Deployable:**
-Compatible with modern distributed and cloud-native platforms for both production and research use.
+- **Sustainability:**
+  Enhanced energy efficiency by reducing idle power consumption, supporting greener data center operations.
 
 ### Experimental Results (Summary)
 
