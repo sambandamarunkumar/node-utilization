@@ -46,16 +46,16 @@ Distributed storage systems use partitioning to spread data across nodes for sca
 
 ### Experimental Results (Summary)
 
-  | Nodes | Static Allocation Throughput (tx/sec) | Dynamic Load Balanced Execution Throughput (tx/sec)| Improvment (%)  |
-  |-------|---------------------------------------| ---------------------------------------------------| ----------------|
-  | 3     |  420                                  | 510                                                | 21.43           |
-  | 5     |  560                                  | 680                                                | 21.43           |
-  | 7     |  610                                  | 740                                                | 21.31           |
-  | 9     |  590                                  | 720                                                | 22.03           |
-  | 11    |  540                                  | 690                                                | 27.78           |
+  | Nodes | Static Partition (tx/sec) | Elastic Scaling | Improvment (%)  |
+  |-------|---------------------------| ----------------| ----------------|
+  | 3     |  52                       | 72              | 26              |
+  | 5     |  48                       | 82              | 34              |
+  | 7     |  44                       | 85              | 41              |
+  | 9     |  41                       | 87              | 46              |
+  | 11    |  39                       | 89              | 50              |
 
 ### Citation
-Runtime Load Balancing Strategies for High Volume Transactional Workflows
+Elastic Partition Scaling for Memory Efficient Distributed Storage Systems
 * Arunkumar Sambandam
 * ***********************************International Journal of Leading Research Publication 
 * ISSN E-ISSN: *****************************2582-8010
