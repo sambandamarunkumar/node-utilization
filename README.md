@@ -2,64 +2,93 @@
 **Elastic Partition Scaling for Memory Efficient Distributed Storage Systems**
 
 ### Paper Information
-- **Author(s): Arunkumar Sambandam
-- **Published In: WCASET 2025 conference 
-- **Publication Date:** 18-19 Dec 2025
-
+- **Author(s):** Arunkumar Sambandam
+- **Published In:** *********************************************International Journal of Leading Research Publication (IJLRP)
+- **Publication Date:** ******Aug 2021
+- **ISSN:** E-ISSN: **********2582-8010
+- **DOI:**
+- **Impact Factor:** *******9.56
 
 ### Abstract
-This work addresses the limitations of Kubernetes’ centralized, heuristic-based scheduler in managing heterogeneous, priority-sensitive workloads at scale. It proposes a decentralized, 
-federated multi-agent reinforcement learning framework that enables adaptive, priority-aware pod placement using local node intelligence. The approach optimizes scheduling decisions by 
-jointly considering pod priority, resource efficiency, and scheduling latency while integrating seamlessly with existing Kubernetes APIs. Experimental evaluation on realistic microservices
-workloads demonstrates improved priority satisfaction, throughput, and scalability compared to traditional and learning-based schedulers.
+Distributed storage systems use partitioning to spread data across nodes for scalability and parallel processing, but static placement often causes uneven workload distribution. Busy nodes face contention and delays, while lightly loaded nodes waste CPU and memory, leading to poor utilization as scale grows. Adding hardware does not guarantee performance gains since bottlenecks persist and underused nodes remain idle. This inefficiency raises operational costs and reduces throughput stability, with fragmented load distribution and inconsistent performance across nodes. To address these limitations, dynamic partition management strategies are needed to balance workloads and fully exploit available capacity for efficient, scalable performance.
 
 ### Key Contributions
-- **Federated Learning–Based Scheduler:**
-  Proposed a decentralized reinforcement learning scheduler that replaces centralized, heuristic-driven Kubernetes scheduling.
-  
-- **Priority-Aware Placement:**
-  Designed a learning objective that integrates pod priority, latency, and resource efficiency for improved placement decisions.
-    
-- **Decentralized and Coordinated Learning:**
-  Implemented federated coordination to synchronize multiple local agents while preserving scalability and autonomy.
-     
-- **End-to-End Validation:**
-  Built and evaluated a Kubernetes-native prototype showing consistent reductions in pod wait time across cluster sizes.
-  
-### Relevance & Real-World Impact
-- **Reduced Scheduling Latency:**
-  Significantly lowered pod waiting times, especially for high-priority workloads under contention.
-   
-- **Improved Scalability:**
-Removed centralized bottlenecks, enabling faster and more adaptive scheduling as clusters grow.
+- **Elastic Partition Scaling:**
+   Proposed a dynamic partitioning framework that adapts to workload changes, preventing hotspots and idle nodes.
 
-- **Adaptive and Resilient Scheduling:**
-    Continuously adjusted to dynamic workloads and node conditions, improving cluster stability.
-  
-  **Efficient Resource Usage:**
-  Enhanced workload distribution and reduced congestion across heterogeneous nodes.
-   
-- **Production and Research Ready:**
-    Delivered a deployable, API-compatible framework suitable for industry use, research, and advanced education.
+- **Balanced Resource Utilization:**
+   Designed mechanisms to redistribute partitions across nodes to maintain uniform CPU and memory usage.
+
+- **Performance Modeling:**
+   Demonstrated how static placement reduces utilization as cluster size grows, and validated improvements with elastic scaling.
+
+- **Simulation & Evaluation:**
+   Implemented prototype simulations showing higher throughput and efficiency compared to static strategies.
+
+- **Memory Efficiency:**
+   Addressed uneven memory consumption by balancing caching and buffering across nodes.
+
+
+
+### Key Contributions
+- **Monitoring-Driven Scheduling:**
+Introduced a metric-based scheduler that continuously tracks queue length, contention, and execution delays to guide intelligent transaction placement.
+
+- **Dynamic Workload Redistribution:**
+Developed an adaptive strategy that shifts transactions from overloaded nodes to underutilized ones to prevent hotspots and maintain balance.
+
+- **Scalability Optimization:**
+Designed a systematic methodology to reduce coordination overhead, lock contention, and commit latency, sustaining throughput as cluster size grows.
+
+- **Implementation & Validation:**
+Implemented and evaluated the approach through simulations across multiple cluster sizes, demonstrating consistently higher throughput than static allocation.
+
+### Relevance & Impact
+
+- **Better Resource Utilization:**
+Reduced node overload and improved overall system efficiency through balanced execution.
+
+- **Faster Transactions:**
+Lowered commit delays and contention, enabling quicker transaction completion.
+
+- **Improved Scalability:**
+Maintained stable throughput as clusters expand and workloads intensify.
+
+- **Stable Under Variability:**
+Adapted smoothly to changing transaction patterns without manual intervention.
+
+- **Practical & Deployable:**
+Compatible with modern distributed and cloud-native platforms for both production and research use.
 
 ### Experimental Results (Summary)
 
-  | Nodes | Baseline scheduler laltenccy (ms) | Reinforced Adaptive wait Optimization (ms) | Improvment (%)  |
-  |-------|-----------------------------------| -------------------------------------------| ----------------|
-  | 3     |  4.8                              | 2.9                                        | 39.58           |
-  | 5     |  4.3                              | 2.4                                        | 44.19           |
-  | 7     |  3.9                              | 2                                          | 48.72           |
-  | 9     |  3.6                              | 1.8                                        | 50.00           |
-  | 11    |  3.4                              | 1.6                                        | 52.94           |
+  | Nodes | Static Allocation Throughput (tx/sec) | Dynamic Load Balanced Execution Throughput (tx/sec)| Improvment (%)  |
+  |-------|---------------------------------------| ---------------------------------------------------| ----------------|
+  | 3     |  420                                  | 510                                                | 21.43           |
+  | 5     |  560                                  | 680                                                | 21.43           |
+  | 7     |  610                                  | 740                                                | 21.31           |
+  | 9     |  590                                  | 720                                                | 22.03           |
+  | 11    |  540                                  | 690                                                | 27.78           |
 
 ### Citation
-Federated Multi Agent Reinforcement Learning For Priority Aware Pod Scheduling In Kubernetes
-**Name** Arunkumar Sambandam
-
+Runtime Load Balancing Strategies for High Volume Transactional Workflows
+* Arunkumar Sambandam
+* ***********************************International Journal of Leading Research Publication 
+* ISSN E-ISSN: *****************************2582-8010
+* License \
 This research is shared for a academic and research purposes. For commercial use, please contact the author.\
+**Resources** \
+https://www.ijlrp.com*****************/ \
+**Author Contact** \
+**LinkedIn**: https://www.linkedin.com/**** | **Email**: arunkumar.sambandam@yahoo.com
 
-**Author Contact** 
-**LinkedIn**: linkedin.com/in/arunkumar-sambandam-9b769b6| **Email**: arunkumar.sambandam@yahoo.com
+
+
+
+
+
+
+
 
 
 
